@@ -1,0 +1,79 @@
+<div id="idp-discovery-container">
+	<div data-se="auth-container" id="okta-sign-in" class="auth-container main-container can-remove-beacon">
+		<div class="okta-sign-in-header auth-header">
+			<img src="https://ok11static.oktacdn.com/assets/img/logos/okta-logo.00b28e552573899e15fa6e77278759d5.png" class="auth-org-logo" alt="okta-dev-523395 logo">
+			<div data-type="beacon-container" class="beacon-container" style="transform: scale(1, 1); text-indent: 1px;">
+				<div class="js-security-beacon">
+					<div class="beacon-blank">
+						<div class="radial-progress-bar" style="clip: rect(0px, 96px, 96px, 48px);">
+							<div class="circle left" style="transform: rotate(0deg); text-indent: 1px;"></div>
+							<div class="circle right" style="transform: rotate(0deg); text-indent: 1px;"></div>
+						</div>
+					</div>
+					<div aria-live="polite" role="img" class="bg-helper auth-beacon auth-beacon-security" data-se="security-beacon" style="display: block; background-image: url(&quot;https://ok11static.oktacdn.com/assets/img/security/golden-gate.67f6cf33d93cbbc5ed6c3de465f1ad2e.jpg&quot;);">
+						<span class="accessibility-text">Security Image - Golden Gate Bridge</span>
+						<div class="okta-sign-in-beacon-border js-auth-beacon-border auth-beacon-border"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="auth-content">
+			<div class="auth-content-inner">
+				<div class="primary-auth">
+					<form novalidate="novalidate" method="POST" action="/" data-se="o-form" slot="content" id="form1" class="primary-auth-form o-form o-form-edit-mode">
+						<div data-se="o-form-content" class="o-form-content o-form-theme clearfix">
+							<h2 data-se="o-form-head" class="okta-form-title o-form-head">Sign In</h2>
+							<div class="o-form-error-container" data-se="o-form-error-container"></div><div class="o-form-fieldset-container" data-se="o-form-fieldset-container">
+								<div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-5">
+									<div data-se="o-form-label" class="okta-form-label o-form-label">
+										<label for="okta-signin-username">Username&nbsp;</label>
+									</div>
+									<div data-se="o-form-input-container" class="o-form-input">
+										<span data-se="o-form-input-username" class="o-form-input-name-username o-form-control okta-form-input-field input-fix">
+											<input type="text" placeholder="" name="username" id="okta-signin-username" value="" aria-label="" autocomplete="off" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+										</span>
+									</div>
+								</div>
+<!-- 								<div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-30">
+									<div data-se="o-form-label" class="okta-form-label o-form-label">
+										<label for="okta-signin-password">Password&nbsp;</label>
+									</div>
+									<div data-se="o-form-input-container" class="o-form-input">
+										<span data-se="o-form-input-password" class="o-form-input-name-password o-form-control okta-form-input-field input-fix">
+											<input type="password" placeholder="" name="password" id="okta-signin-password" value="" aria-label="" autocomplete="off" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+										</span>
+									</div>
+								</div> -->
+<!-- 								<div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top margin-btm-0">
+									<div data-se="o-form-input-container" class="o-form-input">
+										<span data-se="o-form-input-remember" class="o-form-input-name-remember">
+											<div class="custom-checkbox">
+												<input type="checkbox" name="remember" id="input7">
+												<label for="input7" data-se-for-name="remember">Remember me</label>
+											</div>
+										</span>
+									</div>
+								</div> -->
+							</div>
+						</div>
+						<div class="o-form-button-bar">
+							<input class="button button-primary" type="submit" value="Sign In" id="okta-signin-submit" data-type="save">
+						</div>
+					</form>
+					<div class="auth-footer">
+					<a href="#" data-se="needhelp" aria-expanded="false" aria-controls="help-links-container" class="link help js-help">Need help signing in?</a>
+					<ul class="help-links js-help-links" id="help-links-container" style="display: none;">
+						<li>
+							<a href="#" data-se="forgot-password" class="link js-forgot-password">		Forgot password?
+							</a>
+						</li>
+						<li>
+							<a href="https://test.atkodemo.com/help/login" data-se="help-link" class="link js-help-link" rel="noopener noreferrer" target="_blank">Help</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
